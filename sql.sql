@@ -24,3 +24,6 @@ where
                                            30 DAY
 
 select w1.id as 'ID' from Weather as w left join Weather as w1 on w.recordDate = subdate( w1.recordDate, 1)  where w.temperature < w1.temperature
+
+SELECT corr(coluna_x, coluna_y) AS correlacao
+FROM sua_tabela;
