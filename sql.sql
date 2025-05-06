@@ -21,3 +21,4 @@ from
     students
 where
     created_at >= CURRENT_DATE - INTERVAL '30 days'
+                                           30 DAY
