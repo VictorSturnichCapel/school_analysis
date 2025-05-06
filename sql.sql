@@ -22,3 +22,5 @@ from
 where
     created_at >= CURRENT_DATE - INTERVAL '30 days'
                                            30 DAY
+
+select w1.id as 'ID' from Weather as w left join Weather as w1 on w.recordDate = subdate( w1.recordDate, 1)  where w.temperature < w1.temperature
